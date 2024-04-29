@@ -1,0 +1,10 @@
+설치 라이브러리
+yarn add axios 
+yarn add react-router-dom
+yarn add framer-motion
+yarn add styled-components
+yarn add react-icons
+
+
+1. api폴더 생성 ->axios.jsx 생성 후 api 연결
+2. 

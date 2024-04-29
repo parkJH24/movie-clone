@@ -1,0 +1,170 @@
+.movieSlider {
+    padding: 40px 50px;
+  }
+  .movieSlider:hover .swiper-button-prev,
+  .movieSlider:hover .swiper-button-next{
+    opacity: 1;
+  }
+  .swiper {
+    overflow: visible !important;
+  }
+  
+  .movieMainTitle {
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .slick-slider:hover .slick-arrow {
+    display: flex !important;
+  }
+  
+  .sliderList {
+    padding: 0 5px;
+
+  }
+  .sliderList img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sliderList.rate {
+    position: relative;
+  }
+  
+  .sliderList.rate .rateNum {
+    position: absolute;
+    top: 50%;
+    left: 0px !important;
+    transform: translateY(-55%);
+    font-size: 16rem;
+    font-weight: 800;
+    color: #000000;
+    -webkit-text-stroke: 4px #595959;
+    -webkit-text-fill-color: #000000;
+    fill: #000000;
+    transform-origin: center right;
+  }
+  
+  .sliderList.rate .rateNum.last {
+    left: 0px;
+    font-size: 15rem;
+    letter-spacing: -30px;
+  }
+  
+  .sliderList.rate .sliderImg {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    transform-origin: center right !important;
+    cursor: pointer;
+  }
+  
+  .sliderList.rate .sliderImg img {
+    object-fit: cover;
+    width: 60%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .swiper-button-prev,
+.swiper-button-next {
+  align-items: center;
+  height: 100%;
+  z-index: 99;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto;
+  padding: 0 10px;
+  top: 0px;
+  margin-top: 0px;
+  opacity: 0; /* 기본적으로 버튼 숨기기 */
+  transition: opacity 0.3s;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.3 !important; /* disabled 상태일 때 투명도 조절 */
+}
+
+.movieSlider:hover .swiper-button-prev,
+.movieSlider:hover .swiper-button-next {
+  opacity: 1 !important; /* hover 상태에서는 버튼이 확실하게 보이도록 */
+}
+
+.movieSlider:hover .swiper-button-prev.swiper-button-disabled,
+.movieSlider:hover .swiper-button-next.swiper-button-disabled {
+  opacity: 0.3 !important; /* hover 상태에서도 disabled 버튼의 투명도 유지 */
+}
+
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .swiper-button-prev:before,
+  .swiper-button-next:before {
+    font-size: 30px;
+    opacity: 1;
+  }
+  
+  .swiper-button-prev {
+    left: -50px;
+  }
+  .swiper-button-next {
+    right: -50px;
+  }
+  
+  /*------------슬라이드 인포------------*/
+  
+  .sliderInfo {
+    padding: 10px;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    background-color: #000000;
+  }
+  
+  .sliderInfo h4 {
+    font-size: 1rem;
+  }
+  
+  /*랭킹 인포*/
+  .sliderList.rate .sliderInfo {
+    text-align: right;
+  }
+  
+  @media (max-width: 767px) {
+    .slider_title {
+      font-size: 1.5rem;
+    }
+  
+    .slider_container {
+      padding: 40px 15px;
+    }
+  
+    .slick-prev {
+      left: -15px;
+    }
+    .slick-next {
+      right: -15px;
+    }
+  }
+
+  .swiper-pagination{
+    position: absolute;
+    right: 0!important;
+    top: 0!important;
+  }
+  
