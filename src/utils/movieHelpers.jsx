@@ -15,7 +15,7 @@
 // }
 export function getRating(adult) {
     if (adult === undefined) return 'Rating Unknown'; // Just in case
-    return adult ? '청소년 관람불가' : '전체 관람가';
+    return adult ? '청불' : '전체 관람가';
 }
 
 export function getGenresNames(genreIds, genreMap) {
